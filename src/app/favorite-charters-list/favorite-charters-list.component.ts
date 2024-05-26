@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Charter } from '../list-charters/Charter';
-import { FavoriteChartersService } from '../favorite-charters.service';
+import { FavoriteChartersService } from '../services/favorite-charters.service';
 
 @Component({
   selector: 'app-list-favorite-charters',

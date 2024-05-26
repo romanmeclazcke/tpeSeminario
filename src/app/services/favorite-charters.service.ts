@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Charter } from './list-charters/Charter';
+import { Charter } from '../list-charters/Charter';
 
 @Injectable({
   providedIn: 'root'

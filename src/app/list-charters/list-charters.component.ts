@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Charter } from './Charter';
-import { FavoriteChartersService } from '../favorite-charters.service';
+import { FavoriteChartersService } from '../services/favorite-charters.service';
 
 @Component({
   selector: 'app-list-charters',
@@ -49,11 +49,13 @@ export class ListChartersComponent {
     }
 ];
 
-    constructor(private favorites: FavoriteChartersService) {    
-    }
+    constructor(private favorites:FavoriteChartersService){{
+
+    }}
 
 
     addToFavorite(charter:Charter){
+        console.log(charter)
         this.favorites.addToFavorite(charter);
     }
 }
