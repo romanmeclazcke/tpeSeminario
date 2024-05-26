@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Charter } from '../list-charters/Charter';
+import { FavoriteChartersService } from '../favorite-charters.service';
 
 @Component({
   selector: 'app-list-favorite-charters',
@@ -24,7 +25,14 @@ export class FavoriteChartersListComponent {
     species: "Human",
     gender: "Male",
     image: "https://rickandmortyapi.com/api/character/avatar/1.jpeg"
-}
+  }
   ]
+  constructor(private favorites: FavoriteChartersService){
 
+  }
+
+
+  removeToFavorite(charter:Charter){
+    this.favorites.removeToFavorite(charter);
+  }
 }

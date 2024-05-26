@@ -4,10 +4,10 @@
         <img [src]="charter.image" class="card-img-top" alt="imagen de {{charter.name}}">
         <div class="card-body">
             <h3 class="card-text">{{charter.name}}</h3>
-            <p class="card-text">{{charter.status}}</p>
             <p class="card-text">{{charter.gender}}</p>
             <p class="card-text">{{charter.species}}</p>
-            <a href=""><img src="https://images.emojiterra.com/google/android-oreo/512px/2764.png" class="img-fav" alt=""></a>
+            <p class="card-text" [ngClass]="{'status-alive': charter.status === 'Alive', 'status-dead': charter.status === 'Dead'}">{{charter.status}}</p>
+            <a (click)='addToFavorite(charter)'><img src="https://images.emojiterra.com/google/android-oreo/512px/2764.png" class="img-fav" alt=""></a>
         </div>
     </div>
 </div>

@@ -10,6 +10,9 @@ a{
     display: flex;
     justify-content: end;
 }
+a:hover{
+    cursor: pointer;
+}
 .img-fav{
     width: 40px;
 }
@@ -18,3 +21,15 @@ a{
    scale: 1.2;
    transition: ease-in 0.5s ;
 }
+p{
+    font-size: 20px;
+    font-weight: 400;
+}
+.status-alive {
+    color: green;
+}
+
+.status-dead {
+    color: red;
+}
+
