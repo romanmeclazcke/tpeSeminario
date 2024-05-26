@@ -11,24 +11,9 @@ import { FavoriteChartersService } from '../favorite-charters.service';
   styleUrl: './favorite-charters-list.component.css'
 })
 export class FavoriteChartersListComponent {
-  chartersFavorite: Charter[]=[
-    {
-      name: "Rick Sanchez",
-      status: "Alive",
-      species: "Human",
-      gender: "Male",
-      image: "https://rickandmortyapi.com/api/character/avatar/1.jpeg"
-  },
-  {
-    name: "Rick Sanchez",
-    status: "Alive",
-    species: "Human",
-    gender: "Male",
-    image: "https://rickandmortyapi.com/api/character/avatar/1.jpeg"
-  }
-  ]
+  chartersFavorite: Charter[]=[]
   constructor(private favorites: FavoriteChartersService){
-
+    this.chartersFavorite = this.favorites.listFavoriteCharters;
   }
 
 
