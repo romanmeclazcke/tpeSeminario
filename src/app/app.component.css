@@ -9,3 +9,11 @@ li>a{
 ul>li{
     margin:0px 10px 0px 10px;
 }
+.containter-home{
+    display: flex;
+    justify-content: center;
+}
+.containter-list-favorite-charters{
+    background-color: rgb(136, 114, 84);
+    padding: 20px;
+}

@@ -1,7 +1,7 @@
 .containter-charters{
     display: flex;
-    width: 60%;
     flex-wrap: wrap;
+    margin: 30px;
 }
 .containter-charters>div{
     margin: 10px;
@@ -16,5 +16,5 @@ a{
 
 .img-fav:hover{
    scale: 1.2;
-   transition: ease-in-out 0.5s;
+   transition: ease-in 0.5s ;
 }
