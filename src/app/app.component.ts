@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ListChartersComponent } from "./list-charters/list-charters.component";
-import { FavoriteChartersListComponent } from './favorite-charters-list/favorite-charters-list.component';
 import { AboutSerieComponent } from "./about-serie/about-serie.component";
+import { HomeChartersComponent } from "./home-charters/home-charters.component";
+
 
 
 @Component({
@@ -10,7 +10,7 @@ import { AboutSerieComponent } from "./about-serie/about-serie.component";
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, ListChartersComponent, FavoriteChartersListComponent, AboutSerieComponent]
+    imports: [RouterOutlet, AboutSerieComponent, HomeChartersComponent]
 })
 export class AppComponent {
   title = 'tpeSeminario';
