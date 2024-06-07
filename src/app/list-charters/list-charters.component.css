@@ -1,7 +1,8 @@
 .containter-charters{
     display: flex;
     flex-wrap: wrap;
-    margin: 30px;
+    height: auto;
+    justify-content: center;
 }
 .containter-charters>div{
     margin: 10px;
