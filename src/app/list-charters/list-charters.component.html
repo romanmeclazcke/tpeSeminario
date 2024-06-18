@@ -1,5 +1,6 @@
-<h3 class="title">Charters</h3>
-<div class="containter-charters">
+<div class="div-containter">
+    <h3 class="title">Charters</h3>
+    <div class="containter-charters">
     <div *ngFor="let charter of charters" class="card" style="width: 18rem;">
         <img [src]="charter.image" class="card-img-top" alt="imagen de {{charter.name}}">
         <div class="card-body">
@@ -10,4 +11,6 @@
             <a (click)='addToFavorite(charter)'><img src="https://images.emojiterra.com/google/android-oreo/512px/2764.png" class="img-fav" alt=""></a>
         </div>
     </div>
+</div>
+
 </div>

@@ -1,13 +1,13 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg  barra-navegacion">
   <div class="container-fluid">
     <div class="collapse navbar-collapse" id="navbarNav">
       <div class="d-flex justify-content-between w-100"> 
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/charters">Charters</a>
+            <a class="nav-link active" aria-current="page"  [routerLink]="['/charters']">Charters</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about">About Rick and Mort</a>
+            <a class="nav-link" [routerLink]="['/about']">About Rick and Mort</a>
           </li>
         </ul>
       </div>
@@ -17,3 +17,6 @@
 <div class="containter-home">
   <router-outlet></router-outlet>
 </div>
+
+
+
