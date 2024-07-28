@@ -14,7 +14,6 @@ export class FavoriteChartersService {
     if(item==undefined){
        this.listFavoriteCharters.push(charter);
     }
-    console.log(this.listFavoriteCharters);
   }
 
   removeToFavorite(charter:Charter){
@@ -22,7 +21,5 @@ export class FavoriteChartersService {
     if(index!=-1){
       this.listFavoriteCharters.splice(index,1);
     }
-
-    console.log(this.listFavoriteCharters);
   }
 }

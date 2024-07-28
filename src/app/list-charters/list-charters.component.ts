@@ -21,11 +21,9 @@ export class ListChartersComponent {
     ngOnInit(): void{
       this.listChartersServis.getCharacters()
       .subscribe(charter=>this.charters=charter)
-      console.log(this.charters)
     }
 
     addToFavorite(charter:Charter){
-        console.log(charter)
         this.favorites.addToFavorite(charter);
     }
 }
